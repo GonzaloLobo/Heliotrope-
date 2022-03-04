@@ -747,10 +747,10 @@ header #check {
   header .checkbtn {
     display: block;
   }
-  #check:checked ~ ul {
+  header #check:checked ~ ul {
     left: 0;
   }
-  nav ul {
+  header nav ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -762,7 +762,7 @@ header #check {
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
-  nav ul li {
+  header nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;

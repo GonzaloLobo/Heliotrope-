@@ -416,8 +416,8 @@ header #check {
   margin: auto;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: repeat 3, 1fr;
-      grid-template-columns: repeat 3, 1fr;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
   grid-gap: 50px;
   padding: 45px 0px;
 }
@@ -826,7 +826,7 @@ header #check {
     display: -ms-flexbox;
     display: flex;
   }
-  .grupo-1 {
+  footer .grupo-1 {
     width: 90%;
     -ms-grid-columns: 1, 1fr;
         grid-template-columns: 1, 1fr;

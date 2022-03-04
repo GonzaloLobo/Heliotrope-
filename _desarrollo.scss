@@ -1,0 +1,60 @@
+.flex-container {
+  display: flex;
+  align-items: center;
+  /* para que cuando sea responsive se pueda deslizar Wrap */
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+  margin: 50px 50px;
+  padding: 20px;
+  border: 20px solid $colorprincipal;
+  outline: 4px solid $colorprincipal;
+  color: rgb(102, 102, 102);
+
+  .form {
+    min-width: 400px;
+    flex: 1;
+    text-align: center;
+    padding: 30px;
+  }
+
+  .form__input {
+    width: 100%;
+    padding: 7px;
+    margin: 6px 0;
+    border: none;
+    border-bottom: 3px solid $colorprincipal;
+    background: transparent;
+    color: rgb(102, 102, 102);
+  }
+
+  .form__input:focus {
+    background: linear-gradient(to bottom, transparent, #f3d9b0);
+    outline: none;
+  }
+
+  .form textarea {
+    min-height: 140px;
+    resize: none;
+  }
+
+  .form-img {
+    flex: 1;
+    padding: 10px;
+    display: flex;
+    color: $colorprincipal;
+  }
+
+  .img-container {
+    padding: 20px;
+    /* para centrar margin auto  */
+    margin: auto;
+
+    /* 50% oara que sea circular */
+  }
+
+  img {
+    width: 90%;
+    margin: auto;
+  }
+}

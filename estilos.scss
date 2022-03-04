@@ -1,0 +1,488 @@
+$colorprincipal: rgb(255, 186, 77);
+
+$font: "Roboto Mono", monospace;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #f3f0f0;
+  font-family: $font;
+  position: sticky;
+  top: 0;
+  left: 0;
+  box-shadow: 0 0 10px 5px rgb(102, 102, 102);
+  z-index: 1;
+
+  li {
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
+  }
+
+  nav {
+    height: 80px;
+    width: 100%;
+  }
+
+  .enlace {
+    position: absolute;
+    padding: 20px 50px;
+  }
+
+  .logo {
+    height: 45px;
+  }
+
+  nav ul {
+    float: right;
+    margin-right: 20px;
+  }
+
+  nav ul li {
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 2px;
+  }
+
+  nav ul li a {
+    text-decoration: none;
+    color: rgb(102, 102, 102);
+    font-size: 10px;
+    padding: 7px 13px;
+    text-transform: uppercase;
+  }
+
+  li a.active,
+  li a:hover {
+    background-color: $colorprincipal;
+    transition: 1s;
+    border-radius: 1.5rem;
+    text-decoration: none;
+  }
+
+  a:hover {
+    color: white;
+  }
+
+  .checkbtn {
+    font-size: 20px;
+    color: $colorprincipal;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check {
+    display: none;
+  }
+}
+/*----------fin header--------- */
+/* ---------------------------- */
+
+/* main */
+
+/* banner */
+.bannerImg {
+  background-image: url(../img/stacked-waves-haikei.svg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 400px;
+  width: 100%;
+  display: flex;
+}
+
+/* fin de banner */
+/* ---------------------------- */
+
+/* hero */
+.container-hero {
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  background-color: white;
+  height: auto;
+  width: 100%;
+  /* display: flex; */
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  margin-bottom: 4rem;
+
+  span {
+    font-size: 3.5rem;
+    font-weight: bold;
+    color: rgb(102, 102, 102);
+    text-shadow: 4px 3px 6px $colorprincipal;
+    text-align: left;
+    /* word-wrap: break-word; */
+  }
+
+  p {
+    text-align: center;
+    color: rgb(102, 102, 102);
+    font-size: 1.5rem;
+    padding: 2rem;
+  }
+
+  .container-btn__btn {
+    font-size: 1rem;
+    background-color: $colorprincipal;
+    border: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    color: white;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    cursor: pointer;
+  }
+}
+/* fin hero */
+/* ---------------------------- */
+
+/* H2 */
+
+.H2 {
+  font-family: "Nunito Sans", sans-serif;
+  font-size: 30px;
+  background-image: url(../img/blob-scene-haikei.svg);
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: baseline;
+
+  img {
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+    margin: 40px 20px;
+    opacity: 0.3;
+  }
+
+  h2 {
+    color: rgb(102, 102, 102);
+    font-size: 40px;
+    text-align: center;
+    padding-top: 25px;
+  }
+}
+/* fin H2 */
+/* -----------------------*/
+
+/* sec */
+
+.sec {
+  font-family: "Nunito", sans-serif;
+  height: 250px;
+  width: 100%;
+  padding: 2rem;
+
+  p {
+    color: rgb(102, 102, 102);
+    font-size: 1.5rem;
+    text-align: left;
+    line-height: 2em;
+    margin: 1rem;
+    padding: 1rem;
+    border-left: 2px solid rgb(102, 102, 102);
+  }
+
+  .sec__img {
+    background-position: initial;
+    width: 30px;
+    /* margin: 1rem; */
+  }
+}
+/* fin container-2 */
+/* ---------------------------- */
+
+/*section nosotros ------------*/
+/* ----------------------------- */
+.nosotros {
+  font-family: $font;
+  color: rgb(102, 102, 102);
+  height: 700px;
+  width: 100%;
+
+  .nosotros__img {
+    background-image: url(https://images.unsplash.com/photo-1643101808019-34feab61ea6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 300px;
+  }
+
+  .nosotros__text {
+    height: 400px;
+    width: 100%;
+    background-color: white;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+
+  h3 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    font-size: 1rem;
+    text-align: justify;
+  }
+
+  .nosotros-btn__btn {
+    font-size: 1rem;
+    background-color: $colorprincipal;
+    border: 0;
+    padding: 1rem 1rem;
+    border-radius: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+}
+
+/* fin nosotros */
+/* ---------------------------- */
+
+/* TARJETAS */
+/* ----------- */
+.tarjetas {
+  font-family: "Nunito", sans-serif;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  padding: 20px;
+  grid-gap: 40px;
+  z-index: 2;
+
+  .tarjeta {
+    background-color: #f3d9b0;
+    border-radius: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  }
+  .container {
+    position: relative;
+    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    /* o ellipse */
+  }
+
+  .tarjeta:hover {
+    transform: scale(1.04);
+    box-shadow: 0 0 5px 5px rgb(158, 157, 157);
+  }
+
+  .container img {
+    width: 100%;
+    display: block;
+    border-radius: 20px 20px 0 0;
+  }
+  .container:after {
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    border-radius: 20px 20px 0 0;
+    opacity: 0.7;
+  }
+
+  .details {
+    padding: 20px 10px;
+  }
+  .details > h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 18px;
+    margin: 10px 0 15px 0;
+  }
+  .details > p {
+    color: white;
+    font-size: 15px;
+    line-height: 30px;
+    font-weight: 400;
+  }
+}
+/* fin  tarjeta */
+/* ---------------------------- */
+
+/* dev */
+.dev {
+  width: 100%;
+  background-image: url(../img/blob-scene-haikei.svg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(90deg, #fffcf8 8%, rgba(255, 186, 77) 100%); */
+  border: 20px solid white;
+  border-bottom: 0px;
+  color: rgb(102, 102, 102);
+  font-family: $font;
+  display: flex;
+  height: 400px;
+  width: 100%;
+  margin: 0.5rem;
+  overflow: hidden;
+
+  .dev__ctn {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 2rem;
+  }
+
+  h3 {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+  }
+
+  p {
+    text-align: center;
+    overflow: hidden;
+    font-size: 1rem;
+  }
+
+  .dev__btn {
+    font-size: 1rem;
+    background-color: $colorprincipal;
+    border: 0;
+    padding: 1rem 1.5rem;
+    border-radius: 1.5rem;
+    color: white;
+    margin-top: 2rem;
+    cursor: pointer;
+  }
+}
+
+/* final dev */
+/* ---------------------------- */
+
+/* footer */
+.footer {
+  font-family: $font;
+  width: 100%;
+  background-color: #f3f0f0;
+  box-shadow: 0 0 10px 5px rgb(102, 102, 102);
+
+  .grupo-1 {
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px;
+  }
+  figure {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  img {
+    width: 50px;
+    background-color: #f3f0f0;
+    opacity: 0.3;
+  }
+  h2 {
+    color: rgb(102, 102, 102);
+    opacity: 0.5;
+    margin-bottom: 25px;
+    font-size: 15px;
+  }
+  p {
+    color: rgb(102, 102, 102);
+    font-size: 11px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+  }
+
+  .rrss a {
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: white;
+    margin-right: 10px;
+    background-color: $colorprincipal;
+    border-radius: 1.5rem;
+    text-align: center;
+    transition: all 300ms ease;
+
+    align-items: center;
+  }
+
+  img {
+    align-items: center;
+  }
+  .rrss a:hover {
+    background-color: $colorprincipal;
+    opacity: 0.6;
+    border-radius: 1.5rem;
+  }
+
+  .grupo-2 {
+    background-color: #f3f0f0;
+    padding: 15px 10px;
+    text-align: center;
+    color: rgb(102, 102, 102);
+    opacity: 0.5;
+  }
+  small {
+    font-size: 10px;
+  }
+}
+
+/* fin footer */
+/* ------------ */
+
+/* ------------------------- */
+/* usarhtl.html */
+@import "_usarhlt";
+
+/* ---------FIN---------------- */
+/* usarhtl.html */
+
+/* ------------------------- */
+/* nosotros.html */
+/* Galeria ---------- */
+@import "_nosotros";
+
+/* Fin galeria------------ */
+/* -------nosotros.html FIN----------------- */
+
+/* comunidad.html--------------- */
+/* ---------Comunidad-------------------- */
+@import "_comunidad";
+
+/* comunidad.html--------------- */
+/* -------Fin Comunidad---------------------- */
+
+/* desarrollo.html--------------- */
+/* ------- inicio---------------------- */
+@import "_desarrollo";
+
+/* desarrollo.html--------------- */
+/* -------fin desarrollo-------------------- */
+
+/* media queries--------------- */
+/* ----------------------------- */
+@import "_mediaqueries";
+
+/*# sourceMappingURL=estilos.css.map */

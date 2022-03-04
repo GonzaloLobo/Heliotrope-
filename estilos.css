@@ -10,81 +10,67 @@ header {
   position: sticky;
   top: 0;
   left: 0;
-  box-shadow: 0 0 10px 5px rgb(102, 102, 102);
+  box-shadow: 0 0 10px 5px #666666;
   z-index: 1;
 }
-
-li {
+header li {
   text-decoration: none;
   list-style: none;
   font-weight: bold;
 }
-
-nav {
+header nav {
   height: 80px;
   width: 100%;
 }
-
-.enlace {
+header .enlace {
   position: absolute;
   padding: 20px 50px;
 }
-
-.logo {
+header .logo {
   height: 45px;
 }
-
-nav ul {
+header nav ul {
   float: right;
   margin-right: 20px;
 }
-
-nav ul li {
+header nav ul li {
   display: inline-block;
   line-height: 80px;
   margin: 0 2px;
 }
-
-nav ul li a {
+header nav ul li a {
   text-decoration: none;
-  color: rgb(102, 102, 102);
+  color: #666666;
   font-size: 10px;
   padding: 7px 13px;
   text-transform: uppercase;
 }
-
-li a.active,
-li a:hover {
-  /* background-image: url(../img/blurry-gradient-haikei.svg);
-  background-size: cover; */
-  background-color: rgb(255, 186, 77);
+header li a.active,
+header li a:hover {
+  background-color: #ffba4d;
   transition: 1s;
   border-radius: 1.5rem;
   text-decoration: none;
 }
-
-a:hover {
+header a:hover {
   color: white;
 }
-
-.checkbtn {
+header .checkbtn {
   font-size: 20px;
-  color: rgb(255, 186, 77);
+  color: #ffba4d;
   float: right;
   line-height: 80px;
   margin-right: 20px;
   cursor: pointer;
   display: none;
 }
-
-#check {
+header #check {
   display: none;
 }
+
 /*----------fin header--------- */
 /* ---------------------------- */
-
 /* main */
-
 /* banner */
 .bannerImg {
   background-image: url(../img/stacked-waves-haikei.svg);
@@ -98,7 +84,6 @@ a:hover {
 
 /* fin de banner */
 /* ---------------------------- */
-
 /* hero */
 .container-hero {
   text-align: center;
@@ -112,26 +97,23 @@ a:hover {
   padding: 2rem;
   margin-bottom: 4rem;
 }
-
 .container-hero span {
   font-size: 3.5rem;
   font-weight: bold;
-  color: rgb(102, 102, 102);
-  text-shadow: 4px 3px 6px rgba(255, 186, 77);
+  color: #666666;
+  text-shadow: 4px 3px 6px #ffba4d;
   text-align: left;
   /* word-wrap: break-word; */
 }
-
 .container-hero p {
   text-align: center;
-  color: rgb(102, 102, 102);
+  color: #666666;
   font-size: 1.5rem;
   padding: 2rem;
 }
-
-.container-btn__btn {
+.container-hero .container-btn__btn {
   font-size: 1rem;
-  background-color: rgb(255, 186, 77);
+  background-color: #ffba4d;
   border: 0;
   padding: 1rem 1.5rem;
   border-radius: 1.5rem;
@@ -140,22 +122,19 @@ a:hover {
   margin-bottom: 1rem;
   cursor: pointer;
 }
+
 /* fin hero */
 /* ---------------------------- */
-
 /* H2 */
-
 .H2 {
   font-family: "Nunito Sans", sans-serif;
   font-size: 30px;
   background-image: url(../img/blob-scene-haikei.svg);
   background-size: cover;
   width: 100%;
-
   display: flex;
   align-items: baseline;
 }
-
 .H2 img {
   background-position: center;
   background-size: cover;
@@ -163,53 +142,48 @@ a:hover {
   margin: 40px 20px;
   opacity: 0.3;
 }
-
 .H2 h2 {
-  color: rgb(102, 102, 102);
+  color: #666666;
   font-size: 40px;
   text-align: center;
   padding-top: 25px;
 }
+
 /* fin H2 */
 /* -----------------------*/
-
 /* sec */
-
 .sec {
   font-family: "Nunito", sans-serif;
   height: 250px;
   width: 100%;
   padding: 2rem;
 }
-
 .sec p {
-  color: rgb(102, 102, 102);
+  color: #666666;
   font-size: 1.5rem;
   text-align: left;
   line-height: 2em;
   margin: 1rem;
   padding: 1rem;
-  border-left: 2px solid rgb(102, 102, 102);
+  border-left: 2px solid #666666;
 }
-
-.sec__img {
+.sec .sec__img {
   background-position: initial;
   width: 30px;
   /* margin: 1rem; */
 }
+
 /* fin container-2 */
 /* ---------------------------- */
-
 /*section nosotros ------------*/
 /* ----------------------------- */
 .nosotros {
-  font-family: "Nunito", sans-serif;
-  color: rgb(102, 102, 102);
+  font-family: "Roboto Mono", monospace;
+  color: #666666;
   height: 700px;
   width: 100%;
 }
-
-.nosotros__img {
+.nosotros .nosotros__img {
   background-image: url(https://images.unsplash.com/photo-1643101808019-34feab61ea6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
   background-position: center;
   background-size: cover;
@@ -217,34 +191,27 @@ a:hover {
   width: 100%;
   height: 300px;
 }
-
-.nosotros__text {
+.nosotros .nosotros__text {
   height: 400px;
   width: 100%;
   background-color: white;
   flex-direction: column;
-  /* justify-content: center; */
   align-items: center;
   text-align: center;
   padding: 20px;
 }
-
-.nosotros__text h3 {
+.nosotros h3 {
   font-size: 2rem;
   font-weight: bold;
   padding-bottom: 2rem;
 }
-
-.nosotros_text p {
+.nosotros p {
   font-size: 1rem;
   text-align: justify;
-
-  /* padding-bottom: 2rem; */
 }
-
-.nosotros-btn__btn {
+.nosotros .nosotros-btn__btn {
   font-size: 1rem;
-  background-color: rgb(255, 186, 77);
+  background-color: #ffba4d;
   border: 0;
   padding: 1rem 1rem;
   border-radius: 1.5rem;
@@ -255,7 +222,6 @@ a:hover {
 
 /* fin nosotros */
 /* ---------------------------- */
-
 /* TARJETAS */
 /* ----------- */
 .tarjetas {
@@ -266,28 +232,26 @@ a:hover {
   grid-gap: 40px;
   z-index: 2;
 }
-.tarjeta {
+.tarjetas .tarjeta {
   background-color: #f3d9b0;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 }
-.container {
+.tarjetas .container {
   position: relative;
   clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
   /* o ellipse */
 }
-
-.tarjeta:hover {
+.tarjetas .tarjeta:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 5px 5px rgb(158, 157, 157);
+  box-shadow: 0 0 5px 5px #9e9d9d;
 }
-
-.container img {
+.tarjetas .container img {
   width: 100%;
   display: block;
   border-radius: 20px 20px 0 0;
 }
-.container:after {
+.tarjetas .container:after {
   content: "";
   height: 100%;
   width: 100%;
@@ -297,25 +261,24 @@ a:hover {
   border-radius: 20px 20px 0 0;
   opacity: 0.7;
 }
-
-.details {
+.tarjetas .details {
   padding: 20px 10px;
 }
-.details > h3 {
+.tarjetas .details > h3 {
   color: white;
   font-weight: 600;
   font-size: 18px;
   margin: 10px 0 15px 0;
 }
-.details > p {
+.tarjetas .details > p {
   color: white;
   font-size: 15px;
   line-height: 30px;
   font-weight: 400;
 }
+
 /* fin  tarjeta */
 /* ---------------------------- */
-
 /* dev */
 .dev {
   width: 100%;
@@ -325,43 +288,37 @@ a:hover {
   /* background: linear-gradient(90deg, #fffcf8 8%, rgba(255, 186, 77) 100%); */
   border: 20px solid white;
   border-bottom: 0px;
-  color: rgb(102, 102, 102);
-  font-family: "Nunito", sans-serif;
+  color: #666666;
+  font-family: "Roboto Mono", monospace;
   display: flex;
   height: 400px;
   width: 100%;
   margin: 0.5rem;
   overflow: hidden;
 }
-
-.dev__ctn {
+.dev .dev__ctn {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-
   margin: 2rem;
 }
-
-.dev__ctn h3 {
+.dev h3 {
   text-align: center;
   font-size: 2rem;
   font-weight: bold;
-  /* margin: 1rem; */
   padding-bottom: 2rem;
 }
-
-.dev__ctn p {
+.dev p {
   text-align: center;
   overflow: hidden;
   font-size: 1rem;
 }
-
-.dev__btn {
+.dev .dev__btn {
   font-size: 1rem;
-  background-color: rgb(255, 186, 77);
+  background-color: #ffba4d;
   border: 0;
   padding: 1rem 1.5rem;
   border-radius: 1.5rem;
@@ -372,13 +329,12 @@ a:hover {
 
 /* final dev */
 /* ---------------------------- */
-
 /* footer */
 .footer {
   font-family: "Roboto Mono", monospace;
   width: 100%;
   background-color: #f3f0f0;
-  box-shadow: 0 0 10px 5px rgb(102, 102, 102);
+  box-shadow: 0 0 10px 5px #666666;
 }
 .footer .grupo-1 {
   width: 100%;
@@ -389,32 +345,31 @@ a:hover {
   grid-gap: 50px;
   padding: 45px 0px;
 }
-.footer .grupo-1 .box figure {
+.footer figure {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.footer .grupo-1 .box figure img {
+.footer img {
   width: 50px;
   background-color: #f3f0f0;
   opacity: 0.3;
 }
-.footer .grupo-1 .box h2 {
-  color: rgb(102, 102, 102);
+.footer h2 {
+  color: #666666;
   opacity: 0.5;
   margin-bottom: 25px;
   font-size: 15px;
 }
-.footer .grupo-1 .box p {
-  color: rgb(102, 102, 102);
+.footer p {
+  color: #666666;
   font-size: 11px;
   opacity: 0.5;
   margin-bottom: 10px;
 }
-
-.rrss a {
+.footer .rrss a {
   display: inline-block;
   text-decoration: none;
   width: 45px;
@@ -422,81 +377,53 @@ a:hover {
   line-height: 45px;
   color: white;
   margin-right: 10px;
-  background-color: rgb(255, 186, 77);
+  background-color: #ffba4d;
   border-radius: 1.5rem;
   text-align: center;
   transition: all 300ms ease;
-
   align-items: center;
 }
-
-.rrss img {
+.footer img {
   align-items: center;
 }
-.rrss a:hover {
-  background-color: rgb(246, 192, 92);
+.footer .rrss a:hover {
+  background-color: #ffba4d;
   opacity: 0.6;
   border-radius: 1.5rem;
 }
-
-.grupo-2 {
+.footer .grupo-2 {
   background-color: #f3f0f0;
   padding: 15px 10px;
   text-align: center;
-  color: rgb(102, 102, 102);
+  color: #666666;
   opacity: 0.5;
 }
-.grupo-2 small {
+.footer small {
   font-size: 10px;
 }
 
 /* fin footer */
 /* ------------ */
-
 /* ------------------------- */
 /* usarhtl.html */
-
 .cardctn {
   margin: 10px;
-
   border: none;
 }
-
-.card {
+.cardctn .card {
   display: inline-block;
   margin: 15px;
-  background-color: rgb(255, 186, 77) !important;
+  background-color: #ffba4d !important;
 }
-
-.H3 {
+.cardctn .H3 {
   padding: 15px;
 }
 
 /* ---------FIN---------------- */
 /* usarhtl.html */
-
 /* ------------------------- */
 /* nosotros.html */
 /* Galeria ---------- */
-
-.grid-item {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-
-  border-radius: 4px;
-  transition: 0.3s ease-in-out;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
-.grid-item:hover {
-  filter: opacity(0.9);
-  transform: scale(1.04);
-}
-
 #grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -504,6 +431,20 @@ a:hover {
   gap: 20px;
   padding: 20px;
   grid-auto-flow: dense;
+}
+#grid-container .grid-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+  transition: 0.3s ease-in-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+#grid-container .grid-item:hover {
+  filter: opacity(0.9);
+  transform: scale(1.04);
 }
 
 .shortcuts {
@@ -519,6 +460,7 @@ a:hover {
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
 }
+
 .card-ctn {
   position: relative;
   clip-path: ellipse(0 0, 85% 0, 100% 85%, 0 100%);
@@ -526,15 +468,15 @@ a:hover {
 
 .srtc:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 5px 5px rgb(158, 157, 157);
+  box-shadow: 0 0 5px 5px #9e9d9d;
 }
 
 .containerimg {
   width: 100%;
-
   display: block;
   border-radius: 20px 20px 0 0;
 }
+
 .container:after {
   content: "";
   height: 100%;
@@ -545,19 +487,18 @@ a:hover {
   border-radius: 20px 20px 0 0;
   opacity: 0.7;
 }
+
 /* Fin galeria------------ */
 /* -------nosotros.html FIN----------------- */
-
 /* comunidad.html--------------- */
 /* ---------Comunidad-------------------- */
 .cmn {
   font-family: "Nunito", sans-serif;
-  color: rgb(102, 102, 102);
+  color: #666666;
   height: 400px;
   width: 100%;
 }
-
-.cmn__text {
+.cmn .cmn__text {
   height: 150px;
   width: 100%;
   flex-direction: column;
@@ -566,39 +507,35 @@ a:hover {
   margin: 15px;
   padding: 5px;
 }
-
-.cmn__text h3 {
+.cmn .cmn__text h3 {
   font-size: 1.5rem;
   text-align: center;
   padding-top: 15px;
 }
-
-.cmn__text p {
+.cmn .cmn__text p {
   font-size: 1rem;
   text-align: center;
   line-height: 2em;
 }
 
-.H3 h3 {
+.H3 {
   font-family: "Nunito", sans-serif;
+}
+.H3 h3 {
   font-size: 1.5rem;
-  color: rgb(255, 186, 77);
+  color: #ffba4d;
   text-decoration: underline;
   padding-bottom: 5px;
 }
-
 .H3 p {
-  font-family: "Nunito", sans-serif;
-  color: rgb(102, 102, 102);
+  color: #666666;
   font-size: 1rem;
 }
 
 /* comunidad.html--------------- */
 /* -------Fin Comunidad---------------------- */
-
 /* desarrollo.html--------------- */
 /* ------- inicio---------------------- */
-
 .flex-container {
   display: flex;
   align-items: center;
@@ -608,68 +545,60 @@ a:hover {
   background-color: white;
   margin: 50px 50px;
   padding: 20px;
-  border: 20px solid rgb(255, 186, 77);
-  outline: 4px solid rgb(255, 186, 77);
-  color: rgb(102, 102, 102);
+  border: 20px solid #ffba4d;
+  outline: 4px solid #ffba4d;
+  color: #666666;
 }
-
-.form {
+.flex-container .form {
   min-width: 400px;
   flex: 1;
   text-align: center;
   padding: 30px;
 }
-
-.form__input {
+.flex-container .form__input {
   width: 100%;
   padding: 7px;
   margin: 6px 0;
   border: none;
-  border-bottom: 3px solid rgb(255, 186, 77);
+  border-bottom: 3px solid #ffba4d;
   background: transparent;
-  color: rgb(102, 102, 102);
+  color: #666666;
 }
-
-.form__input:focus {
+.flex-container .form__input:focus {
   background: linear-gradient(to bottom, transparent, #f3d9b0);
   outline: none;
 }
-
-.form textarea {
+.flex-container .form textarea {
   min-height: 140px;
   resize: none;
 }
-
-.form-img {
+.flex-container .form-img {
   flex: 1;
   padding: 10px;
   display: flex;
-  color: rgb(255, 186, 77);
+  color: #ffba4d;
 }
-
-.img-container {
+.flex-container .img-container {
   padding: 20px;
   /* para centrar margin auto  */
   margin: auto;
-
   /* 50% oara que sea circular */
 }
-
-.form-img img {
+.flex-container img {
   width: 90%;
   margin: auto;
 }
+
 /* desarrollo.html--------------- */
 /* -------fin desarrollo-------------------- */
-
 /* media queries--------------- */
 /* ----------------------------- */
-
 @media (max-width: 576px) {
-  .checkbtn {
+  header .checkbtn {
     display: block;
   }
-  ul {
+
+  header ul {
     position: fixed;
     width: 100%;
     height: 100vh;
@@ -678,27 +607,26 @@ a:hover {
     top: 80px;
     left: -100%;
     text-align: center;
-
     transition: all 0.5s;
   }
 
-  nav ul li {
+  header nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
 
-  nav ul li a {
+  header nav ul li a {
     font-size: 20px;
   }
 
-  li a:hover,
-  li a.active {
+  header li a:hover,
+  header li a.active {
     background-color: none;
     color: white;
   }
 
-  #check:checked ~ ul {
+  header #check:checked ~ ul {
     left: 0;
   }
 
@@ -719,16 +647,17 @@ a:hover {
     flex-direction: column;
   }
 }
-
 @media (min-width: 768px) {
   .nosotros {
     display: flex;
   }
+
   .nosotros__img {
     background-size: cover;
     width: 50%;
     height: 100%;
   }
+
   .nosotros__text {
     width: 50%;
     height: 100%;
@@ -746,20 +675,27 @@ a:hover {
   .tall {
     grid-row: span 2;
   }
+
   .grid-container {
     display: flex;
   }
+
   .grupo-1 {
     width: 90%;
     grid-template-columns: repeat(1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;
   }
+
   .cmn {
     display: flex;
     height: 300px;
   }
+
   .cmn__text {
     height: 150px;
   }
 }
+/*# sourceMappingURL=estilos.css.map */
+
+/*# sourceMappingURL=estilos.css.map */

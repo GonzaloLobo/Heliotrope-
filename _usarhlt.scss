@@ -1,0 +1,15 @@
+.cardctn {
+  margin: 10px;
+
+  border: none;
+
+  .card {
+    display: inline-block;
+    margin: 15px;
+    background-color: $colorprincipal !important;
+  }
+
+  .H3 {
+    padding: 15px;
+  }
+}

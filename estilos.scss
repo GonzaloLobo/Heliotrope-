@@ -1,6 +1,6 @@
 $colorprincipal: rgb(255, 186, 77);
 
-$font: "Roboto Mono", monospace;
+$font: "Nunito", sans-serif;
 
 * {
   margin: 0;
@@ -10,7 +10,7 @@ $font: "Roboto Mono", monospace;
 
 header {
   background-color: #f3f0f0;
-  font-family: $font;
+  font-family: "Roboto Mono", monospace;
   position: sticky;
   top: 0;
   left: 0;
@@ -237,6 +237,7 @@ header {
   p {
     font-size: 1rem;
     text-align: justify;
+    line-height: 30px;
   }
 
   .nosotros-btn__btn {
@@ -373,7 +374,7 @@ header {
 
 /* footer */
 .footer {
-  font-family: $font;
+  font-family: "Roboto Mono", monospace;
   width: 100%;
   background-color: #f3f0f0;
   box-shadow: 0 0 10px 5px rgb(102, 102, 102);

@@ -1,7 +1,43 @@
+// variables
+// paletas
 $colorprincipal: rgb(255, 186, 77);
+$colortarjetas1: #f3d9b0;
+$colortarjetas2: #fda5b8;
 
-$font: "Nunito", sans-serif;
+$font1: "Nunito", sans-serif;
+$font2: "Roboto Mono", monospace;
+// maps
+$headings: (
+  h1: 3.5rem,
+  h2: 30px,
+  h3: 2rem,
+  h4: 2rem,
+  h6: 15px,
+);
+// fin maps
 
+// mixin
+
+@mixin btn {
+  font-size: 1rem;
+  border: 0;
+  padding: 1rem 1.5rem;
+  margin-top: 2rem;
+  cursor: pointer;
+  border-radius: 1.5rem;
+  color: white;
+}
+
+@mixin tarjeta {
+  background-color: #f3d9b0;
+  border-radius: 20px;
+  box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+}
+// extend en .tarjetas
+
+//
+// fin variables
+//
 * {
   margin: 0;
   padding: 0;
@@ -10,45 +46,55 @@ $font: "Nunito", sans-serif;
 
 header {
   background-color: #f3f0f0;
-  font-family: "Roboto Mono", monospace;
+  font-family: $font2;
   position: sticky;
   top: 0;
   left: 0;
-  box-shadow: 0 0 10px 5px rgb(102, 102, 102);
+  box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
-
-  li {
-    text-decoration: none;
-    list-style: none;
-    font-weight: bold;
-  }
 
   nav {
     height: 80px;
     width: 100%;
+
+    #check {
+      display: none;
+    }
+  }
+
+  .checkbtn {
+    font-size: 20px;
+    color: $colorprincipal;
+    float: right;
+    line-height: 80px;
+    margin-right: 20px;
+    cursor: pointer;
+    display: none;
   }
 
   .enlace {
     position: absolute;
     padding: 20px 50px;
   }
-
   .logo {
     height: 45px;
   }
 
-  nav ul {
+  ul {
     float: right;
     margin-right: 20px;
   }
 
-  nav ul li {
+  ul li {
     display: inline-block;
     line-height: 80px;
     margin: 0 2px;
+    text-decoration: none;
+    list-style: none;
+    font-weight: bold;
   }
 
-  nav ul li a {
+  li a {
     text-decoration: none;
     color: rgb(102, 102, 102);
     font-size: 10px;
@@ -62,24 +108,13 @@ header {
     transition: 1s;
     border-radius: 1.5rem;
     text-decoration: none;
+    &:hover {
+      color: white;
+    }
   }
 
-  a:hover {
+  li a:hover {
     color: white;
-  }
-
-  .checkbtn {
-    font-size: 20px;
-    color: $colorprincipal;
-    float: right;
-    line-height: 80px;
-    margin-right: 20px;
-    cursor: pointer;
-    display: none;
-  }
-
-  #check {
-    display: none;
   }
 }
 /*----------fin header--------- */
@@ -104,7 +139,6 @@ header {
 /* hero */
 .container-hero {
   text-align: center;
-  font-family: "Nunito", sans-serif;
   background-color: white;
   height: auto;
   width: 100%;
@@ -114,12 +148,13 @@ header {
   padding: 2rem;
   margin-bottom: 4rem;
 
-  span {
-    font-size: 3.5rem;
+  h1 {
+    font-size: map-get($headings, h1);
     font-weight: bold;
     color: rgb(102, 102, 102);
     text-shadow: 4px 3px 6px $colorprincipal;
-    text-align: left;
+    text-align: center;
+    font-family: $font1;
     /* word-wrap: break-word; */
   }
 
@@ -128,18 +163,12 @@ header {
     color: rgb(102, 102, 102);
     font-size: 1.5rem;
     padding: 2rem;
+    font-family: $font1;
   }
 
   .container-btn__btn {
-    font-size: 1rem;
+    @include btn;
     background-color: $colorprincipal;
-    border: 0;
-    padding: 1rem 1.5rem;
-    border-radius: 1.5rem;
-    color: white;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
-    cursor: pointer;
   }
 }
 /* fin hero */
@@ -148,8 +177,8 @@ header {
 /* H2 */
 
 .H2 {
-  font-family: "Nunito Sans", sans-serif;
-  font-size: 30px;
+  font-family: $font1;
+  font-size: map-get($headings, h2);
   background-image: url(img/blob-scene-haikei.svg);
   background-size: cover;
   width: 100%;
@@ -177,14 +206,14 @@ header {
 /* sec */
 
 .sec {
-  font-family: "Nunito", sans-serif;
+  font-family: $font2;
   height: 250px;
   width: 100%;
   padding: 2rem;
 
   p {
     color: rgb(102, 102, 102);
-    font-size: 1.5rem;
+    font-size: 1rem;
     text-align: left;
     line-height: 2em;
     margin: 1rem;
@@ -204,9 +233,8 @@ header {
 /*section nosotros ------------*/
 /* ----------------------------- */
 .nosotros {
-  font-family: $font;
   color: rgb(102, 102, 102);
-  height: 700px;
+  height: 650px;
   width: 100%;
 
   .nosotros__img {
@@ -215,7 +243,7 @@ header {
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
-    height: 300px;
+    height: 400px;
   }
 
   .nosotros__text {
@@ -229,25 +257,16 @@ header {
   }
 
   h3 {
-    font-size: 2rem;
+    font-family: $font1;
+    font-size: map-get($headings, h3);
     font-weight: bold;
     padding-bottom: 2rem;
   }
 
   p {
+    font-family: $font2;
     font-size: 1rem;
     text-align: justify;
-  }
-
-  .nosotros-btn__btn {
-    font-size: 1rem;
-    background-color: $colorprincipal;
-    border: 0;
-    padding: 1rem 1rem;
-    border-radius: 1.5rem;
-    color: white;
-    margin-top: 2rem;
-    cursor: pointer;
   }
 }
 
@@ -257,21 +276,25 @@ header {
 /* TARJETAS */
 /* ----------- */
 .tarjetas {
-  font-family: "Nunito", sans-serif;
+  font-family: $font1;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
   grid-gap: 40px;
   z-index: 2;
 
-  .tarjeta {
-    background-color: #f3d9b0;
-    border-radius: 20px;
-    box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  .tarjA {
+    @include tarjeta;
   }
+
+  .tarjB {
+    @extend .tarjA;
+    background-color: $colortarjetas2;
+  }
+
   .container {
     position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+    clip-path: circle(0 0, 100% 0, 100% 85%, 0 100%);
     /* o ellipse */
   }
 
@@ -299,7 +322,7 @@ header {
   .details {
     padding: 20px 10px;
   }
-  .details > h3 {
+  .details > h4 {
     color: white;
     font-weight: 600;
     font-size: 18px;
@@ -307,6 +330,7 @@ header {
   }
   .details > p {
     color: white;
+    font-family: $font1;
     font-size: 15px;
     line-height: 30px;
     font-weight: 400;
@@ -324,8 +348,7 @@ header {
   /* background: linear-gradient(90deg, #fffcf8 8%, rgba(255, 186, 77) 100%); */
   border: 20px solid white;
   border-bottom: 0px;
-  color: rgb(102, 102, 102);
-  font-family: $font;
+  font-family: $font1;
   display: flex;
   height: 400px;
   width: 100%;
@@ -339,32 +362,28 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     margin: 2rem;
+    color: rgb(102, 102, 102);
   }
 
-  h3 {
+  h4 {
     text-align: center;
-    font-size: 2rem;
+    font-size: map-get($headings, h4);
     font-weight: bold;
     padding-bottom: 2rem;
   }
 
   p {
     text-align: center;
+    justify-content: center;
+
     overflow: hidden;
     font-size: 1rem;
   }
 
   .dev__btn {
-    font-size: 1rem;
+    @include btn;
     background-color: $colorprincipal;
-    border: 0;
-    padding: 1rem 1.5rem;
-    border-radius: 1.5rem;
-    color: white;
-    margin-top: 2rem;
-    cursor: pointer;
   }
 }
 
@@ -373,10 +392,10 @@ header {
 
 /* footer */
 .footer {
-  font-family: "Roboto Mono", monospace;
+  font-family: $font2;
   width: 100%;
   background-color: #f3f0f0;
-  box-shadow: 0 0 10px 5px rgb(102, 102, 102);
+  box-shadow: 0px -7px 1px 0px rgba(0, 0, 0, 0.21);
 
   .grupo-1 {
     width: 100%;
@@ -399,11 +418,11 @@ header {
     background-color: #f3f0f0;
     opacity: 0.3;
   }
-  h2 {
+  h6 {
     color: rgb(102, 102, 102);
     opacity: 0.5;
     margin-bottom: 25px;
-    font-size: 15px;
+    font-size: map-get($headings, h6);
   }
   p {
     color: rgb(102, 102, 102);
@@ -483,7 +502,9 @@ header {
 
 /* media queries--------------- */
 /* ----------------------------- */
+
 @media (max-width: 576px) {
+  // header
   header .checkbtn {
     display: block;
   }
@@ -519,15 +540,26 @@ header {
     background-color: none;
     color: white;
   }
+  // fin Header
+  //
+
+  // hero
 
   .container-hero span {
     font-size: 3rem;
   }
+  // fin hero
+  //
+
+  // H2
 
   .H2 h2 {
     font-size: 25px;
   }
+  // fin H2
+  //
 
+  //
   .sec p {
     font-size: 15px;
   }
@@ -535,6 +567,13 @@ header {
   .tarjetas {
     display: flex;
     flex-direction: column;
+  }
+  // footer
+  .grupo-1 {
+    flex-direction: wrap;
+    .box .b3 {
+      margin-right: 10px;
+    }
   }
 }
 
@@ -554,7 +593,7 @@ header {
   }
 
   .nosotros__text p {
-    font-size: 1.5rem;
+    font-size: 1rem;
     line-height: 30px;
   }
 
@@ -568,8 +607,10 @@ header {
   .grid-container {
     display: flex;
   }
+
   footer .grupo-1 {
     width: 90%;
+
     grid-template-columns: (1, 1fr);
     grid-gap: 30px;
     padding: 35px 0px;

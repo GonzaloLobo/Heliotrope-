@@ -148,7 +148,7 @@ header {
   padding: 2rem;
   margin-bottom: 4rem;
 
-  h1 {
+  .c-title-primary {
     font-size: map-get($headings, h1);
     font-weight: bold;
     color: rgb(102, 102, 102);
@@ -193,7 +193,7 @@ header {
     opacity: 0.3;
   }
 
-  h2 {
+  .c-title-secondary {
     color: rgb(102, 102, 102);
     font-size: 40px;
     text-align: center;
@@ -247,7 +247,6 @@ header {
   }
 
   .nosotros__text {
-    
     height: 400px;
     width: 100%;
     background-color: white;
@@ -257,7 +256,7 @@ header {
     padding: 20px;
   }
 
-  h3 {
+  .c-title-tertiary {
     font-family: $font1;
     font-size: map-get($headings, h3);
     font-weight: bold;
@@ -323,7 +322,7 @@ header {
   .details {
     padding: 20px 10px;
   }
-  .details > h4 {
+  .details > .c-title-latest {
     color: white;
     font-weight: 600;
     font-size: 18px;

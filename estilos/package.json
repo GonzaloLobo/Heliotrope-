@@ -4,7 +4,7 @@
   "description": "heliotrope criptomoneda",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./estilos/scss/estilos.scss ./estilos/scss/estilos.css"
   },
   "repository": {
     "type": "git",

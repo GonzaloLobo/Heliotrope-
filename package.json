@@ -1,10 +1,20 @@
 {
+  "devDependencies": {
+    "parrotsay": "^0.1.0"
+  }
+}
+
+{
   "name": "heliotrope",
   "version": "1.0.0",
   "description": "Hlt es una criptomoneda segura, en alza y en constante crecimiento gracias a su gran equipo de desarrolladores.",
   "main": "index.html",
   "scripts": {
-    "watch": "sass --watch scss:css"
+    "watch": "sass --watch scss:css nodemon",
+     "install": "npm install nodemon -- node-sass"
+     "":
+
+    
   },
   "repository": {
     "type": "git",
@@ -18,3 +28,4 @@
   },
   "homepage": "https://heliotropelt.netlify.app/index.html"
 }
+

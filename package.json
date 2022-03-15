@@ -1,8 +1,8 @@
 {
-  "name": "heliotrope---gln",
+  "name": "heliotrope",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "Hlt es una criptomoneda segura, en alza y en constante crecimiento gracias a su gran equipo de desarrolladores.",
+  "main": "index.html",
   "scripts": {
     "watch": "sass --watch scss:css"
   },
@@ -10,9 +10,8 @@
     "type": "git",
     "url": "https://github.com/GonzaloLobo/Heliotrope"
   },
-  "keywords": {"HLT, heliotrope, dinero digital, criptomonedas, valor criptomonedas, cotizacion criptomonedas , noticias cripto, blockchain, defi,, nft"
-  },
-  "author": "Gonzalo Lobo Nicolas ",
+  "keywords": ["HLT, heliotrope, dinero digital, criptomonedas, valor criptomonedas, cotizacion criptomonedas , noticias cripto, blockchain, defi, nft"],
+  "author": "Gonzalo Lobo Nicolas",
   "license": "ISC",
   "bugs": {
     "url": "https://docs.google.com/document/d/1qA7k_F2AfB-UFG_JN-Sk65tKJVZ-UzWEniiyBlj5A0o/edit?usp=sharing"

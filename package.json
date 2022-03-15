@@ -1,0 +1,41 @@
+{
+  "name": "heliotrope---gln",
+  "version": "1.0.0",
+  "description": "heliotrope criptomoneda",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./estilos.scss ./estilos.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/GonzaloLobo/Heliotrope-.git"
+  },
+  "author": "GLN - Gonzalo Lobo Nicolas",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/GonzaloLobo/Heliotrope-/issues"
+  },
+  "homepage": "https://github.com/GonzaloLobo/Heliotrope-#readme"
+}
+
+
+{
+  "name": "Heliotrope", // Nombre del proyecto
+  "versión": "1.0.1", // número de versión, siga el formato de "versión principal. versión secundaria. número de parche"
+  "descripción": "este es un archivo de prueba", // la descripción del proyecto de la aplicación, es para describir su propósito, etc.
+  "main": "server.js", // archivo de entrada de la aplicación
+"directories": {
+      "test": "test" // directorio
+},
+  "dependencias": {// Aplicación del proyecto que ejecuta módulos dependientes
+      "date-and-time": "^ 0.10.0" // Para este proyecto, la operación depende de la fecha y la hora①
+},
+  "devDependencies": {}, // Dependencia del entorno de desarrollo de la aplicación del proyecto
+  "scripts": {// Script, especifica la abreviatura de la línea de comando npm para ejecutar el comando del script, el valor predeterminado es test vacío②
+ "test": "echo \"Error: no test specified\" && exit 1",
+ "start": "node server.js"
+},
+  "keywords": [], // Una matriz de cadenas, que es conveniente para que otros busquen este módulo
+  "autor": "GLN - Gonzalo Lobo Nicolas", // autor
+  "license": "ISC" // Método de autorización
+}

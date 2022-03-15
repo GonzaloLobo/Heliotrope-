@@ -101,12 +101,12 @@ header li a:hover {
   margin-bottom: 4rem;
 }
 .container-hero .c-title-primary {
-  font-size: 4.5rem;
+  font-size: 3.5rem;
   font-weight: bold;
   color: #666666;
   text-shadow: 4px 3px 6px #ffba4d;
   text-align: center;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
   font-weight: 50px;
   /* word-wrap: break-word; */
 }
@@ -133,7 +133,7 @@ header li a:hover {
 /* H2 */
 .H2 {
   font-family: "Poppins", sans-serif;
-  font-size: 3rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: baseline;
   margin-left: 30px;
@@ -147,7 +147,6 @@ header li a:hover {
 }
 .H2 .c-title-secondary {
   color: #666666;
-  font-size: 40px;
   text-align: center;
   padding-top: 25px;
 }
@@ -392,17 +391,17 @@ footer .footerctn .foo .rrss li a .fa {
 footer .footerctn .foo .mapasad {
   position: relative;
 }
-footer .footerctn .foo .maps {
+footer .footerctn .foo .list-maps .maps {
   list-style: none;
 }
-footer .footerctn .foo .maps a {
+footer .footerctn .foo .list-maps .maps a {
   list-style: none;
   color: #666666;
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
 }
-footer .footerctn .foo .maps a:hover {
+footer .footerctn .foo .list-maps .maps a:hover {
   color: #ffba4d;
   transition: 0.1s;
   opacity: 0.8;
@@ -438,6 +437,9 @@ footer .footerctn .foo .info li p a:hover {
   text-align: center;
   color: #666666;
   font-family: "Poppins", sans-serif;
+}
+.grupo-2 small {
+  font-size: 0.8rem;
 }
 
 @media (max-width: 991px) {

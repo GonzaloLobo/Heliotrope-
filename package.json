@@ -8,13 +8,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/GonzaloLobo/Heliotrope-.git"
+    "url": "https://github.com/GonzaloLobo/Heliotrope"
   },
-  "keywords": [],
+  "keywords": {"HLT, heliotrope, dinero digital, criptomonedas, valor criptomonedas, cotizacion criptomonedas , noticias cripto, blockchain, defi,, nft"
+  },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/GonzaloLobo/Heliotrope-/issues"
+    "url": "https://docs.google.com/document/d/1qA7k_F2AfB-UFG_JN-Sk65tKJVZ-UzWEniiyBlj5A0o/edit?usp=sharing"
   },
-  "homepage": "https://github.com/GonzaloLobo/Heliotrope-#readme"
+  "homepage": "https://heliotropelt.netlify.app/index.html"
 }

@@ -4,17 +4,14 @@
   }
 }
 
-{
+  {
   "name": "heliotrope",
   "version": "1.0.0",
   "description": "Hlt es una criptomoneda segura, en alza y en constante crecimiento gracias a su gran equipo de desarrolladores.",
   "main": "index.html",
   "scripts": {
     "watch": "sass --watch scss:css nodemon",
-     "install": "npm install nodemon -- node-sass"
-     "":
-
-    
+     "install": "npm install nodemon -- node-sass" 
   },
   "repository": {
     "type": "git",
@@ -27,5 +24,5 @@
     "url": "https://docs.google.com/document/d/1qA7k_F2AfB-UFG_JN-Sk65tKJVZ-UzWEniiyBlj5A0o/edit?usp=sharing"
   },
   "homepage": "https://heliotropelt.netlify.app/index.html"
-}
+  }
 

@@ -346,14 +346,14 @@ footer .container {
   grid-gap: 30px;
 }
 
-footer .container .s .c-title-latest {
+.c-title-latest {
   position: relative;
   color: #666666;
   font-weight: 400;
   margin-bottom: 30px;
 }
 
-footer .container .s .c-title-latest::before {
+.c-title-latest::before {
   content: "";
   position: absolute;
   bottom: -5px;
@@ -363,7 +363,7 @@ footer .container .s .c-title-latest::before {
   background-color: #ffba4d;
 }
 
-footer .container .s p {
+.s p {
   color: #666666;
 }
 
@@ -400,7 +400,7 @@ footer .container .s p {
   border-radius: 1.5rem;
 }
 
-g .sci li a .fa {
+.sci li a .fa {
   color: white;
   font-size: 20px;
 }

@@ -1,10 +1,17 @@
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
+
+
+
 // variables
 // paletas
 $colorprincipal: rgb(255, 186, 77);
 $colortarjetas1: #f3d9b0;
 $colortarjetas2: #fda5b8;
 
-$font1: "Nunito", sans-serif;
+$font1:  "Poppins", sans-serif;
+// "Nunito", sans-serif
 $font2: "Roboto Mono", monospace;
 // maps
 $headings: (
@@ -389,143 +396,127 @@ header {
 /* final dev */
 /* ---------------------------- */
 
-
-@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,400;0,600;1,200;1,700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=ZCOOL+QingKe+HuangYou&display=swap");
-
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: "Poppins", sans-serif;
-}
-
 footer {
   position: relative;
   width: 100%;
   height: auto;
   padding: 50px 100px;
   background-color: #f3f0f0;
-}
+  font-family:  $font1;
 
-footer .container {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 2fr 2fr 1fr 1fr;
-  grid-gap: 30px;
-}
+  .footerctn {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-gap: 30px;
 
- .c-title-latest {
-  position: relative;
-  color: rgb(102, 102, 102);
-  font-weight: 400;
-  margin-bottom: 30px;
-}
+    .foo {
+      .c-title-latest {
+        position: relative;
+        color: rgb(102, 102, 102);
+        font-weight: 400;
+        margin-bottom: 30px;
+        &:before {
+          content: "";
+          position: absolute;
+          bottom: -5px;
+          left: 0;
+          width: 50px;
+          height: 2px;
+          background-color: rgb(255, 186, 77);
+        }
+      }
+      p {
+        color: rgb(102, 102, 102);
+      }
+      .rrss {
+        margin-top: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 50px);
+        grid-gap: 10px;
+        li {
+          list-style: none;
+          a {
+            display: inline-block;
+            text-decoration: none;
+            width: 45px;
+            height: 45px;
+            line-height: 50px;
+            color: white;
+            margin-right: 10px;
+            margin-bottom: 20px;
+            background-color: rgb(255, 186, 77);
+            border-radius: 1.5rem;
+            text-align: center;
+            transition: all 300ms ease;
+            align-items: center;
+            &:hover {
+              background-color: rgb(255, 186, 77);
+              opacity: 0.6;
+              border-radius: 1.5rem;
+            }
+            .fa {
+              color: white;
+              font-size: 20px;
+            }
+          }
+        }
+      }
+    .mapasad {
+      position: relative;
+    }
+    .maps {
+      list-style: none;
+      
+      a {
+        list-style: none;
+        color: rgb(102, 102, 102);
+        text-decoration: none;
+        margin-bottom: 10px;
+        display: inline-block;
+        &:hover {
+            color: rgb(255, 186, 77);
+            transition: 0.1s;
+            opacity: 0.8;
+        }
+      }
+    }
+    
+      
+    .info {
+      position: relative;
+      li {
+        display: grid;
+        grid-template-columns: 30px 1fr;
+        margin-bottom: 16px;
+          span {
+            color: rgb(255, 186, 77) !important;
+            &:nth-child(1) {
+              color: rgb(102, 102, 102);
+              font-size: 20px;
+            }
+          }
+          p {
+            a {
+              color: rgb(102, 102, 102);
+              text-decoration: none;
+              &:hover {
+                color: rgb(255, 186, 77);
+                transition: 0.1s;
+              }  
+            }
+          }
+        }
+      }
+    }
+  }
+}  
 
-.c-title-latest::before {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 50px;
-  height: 2px;
-  background-color: rgb(255, 186, 77);
-}
-
- .s p {
-  color: rgb(102, 102, 102);
-}
-
-.sci {
-  margin-top: 20px;
-  display: grid;
-  grid-template-columns: repeat(4, 50px);
-  grid-gap: 10px;
-}
-
-.sci li {
-  list-style: none;
-}
-
-.sci li a {
-  display: inline-block;
-  text-decoration: none;
-  width: 45px;
-  height: 45px;
-  line-height: 50px;
-  color: white;
-  margin-right: 10px;
-  margin-bottom: 20px;
-  background-color: rgb(255, 186, 77);
-  border-radius: 1.5rem;
-  text-align: center;
-  transition: all 300ms ease;
-  align-items: center;
-}
-
-.sci li a:hover {
-  background-color: rgb(255, 186, 77);
-  opacity: 0.6;
-  border-radius: 1.5rem;
-}
 
 
 
-.sci li a .fa {
-  color: white;
-  font-size: 20px;
-}
 
-.quicklinks {
-  position: relative;
-}
 
-.quicklinks li {
-  list-style: none;
-}
-
-.quicklinks li a {
-  color: rgb(102, 102, 102);
-  text-decoration: none;
-  margin-bottom: 10px;
-  display: inline-block;
-}
-
-.quicklinks li a:hover {
-  color: rgb(255, 186, 77);
-  transition: 0.1s;
-  opacity: 0.8;
-}
-
-.info {
-  position: relative;
-}
-
-.info li {
-  display: grid;
-  grid-template-columns: 30px 1fr;
-  margin-bottom: 16px;
-}
-
-// .info li span:nth-child(1) {
-//   color: rgb(102, 102, 102);
-//   font-size: 20px;
-// }
-
-.info li span {
-  color: rgb(255, 186, 77) !important;
-}
-
-.info a {
-  color: rgb(102, 102, 102);
-  text-decoration: none;
-}
-
-.info a:hover {
-  color: rgb(255, 186, 77);
-  transition: 0.1s;
-}
 
 .grupo-2 {
   width: 100%;
@@ -533,6 +524,7 @@ footer .container {
   padding: 8px 100px;
   text-align: center;
   color: rgb(102, 102, 102);
+  font-family: $font1;
 }
 
 @media (max-width: 991px) {
@@ -540,35 +532,19 @@ footer .container {
     padding: 40px;
   }
 
-  footer .container {
+  footer .footerctn {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
 @media (max-width: 768px) {
-  footer .container {
+  footer .footerctn {
     grid-template-columns: repeat(1, 1fr);
   }
   .tittle-primary {
     text-align: center;
   }
 }
-
-// .info li span:nth-child(1) {
-//   color: rgb(102, 102, 102);
-//   font-size: 20px;
-// }
-
-// .info li span {
-//   font-size: 1.5rem;
-//   color: rgb(255, 186, 77) !important;
-// }
-
-// .info a {
-//   color: rgb(102, 102, 102);
-//   text-decoration: none;
-//   font-size: 1rem;
-// }
 
 /* fin footer */
 /* ------------ */

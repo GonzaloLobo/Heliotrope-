@@ -134,7 +134,7 @@ header {
   background-size: cover;
   height: 400px;
   width: 100%;
-  display: flex;
+
 }
 
 /* fin de banner */
@@ -201,7 +201,7 @@ header {
 
   .c-title-secondary {
     color: rgb(102, 102, 102);
-    
+
     text-align: center;
     padding-top: 25px;
   }
@@ -283,7 +283,7 @@ header {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
   grid-gap: 40px;
-  z-index: 2;
+  
 
   .tarjA {
     @include tarjeta;
@@ -470,7 +470,7 @@ footer {
             list-style: none;
             color: rgb(102, 102, 102);
             text-decoration: none;
-            margin-bottom: 10px; 
+            margin-bottom: 10px;
             display: inline-block;
             &:hover {
               color: rgb(255, 186, 77);

@@ -83,7 +83,6 @@ header li a:hover {
   background-size: cover;
   height: 400px;
   width: 100%;
-  display: flex;
 }
 
 /* fin de banner */
@@ -220,7 +219,6 @@ header li a:hover {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
   grid-gap: 40px;
-  z-index: 2;
 }
 .tarjetas .tarjA, .tarjetas .tarjB {
   background-color: #f3d9b0;

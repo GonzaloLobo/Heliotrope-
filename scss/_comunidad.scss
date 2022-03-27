@@ -1,11 +1,11 @@
 .cmn {
   font-family: $font2;
   color: rgb(102, 102, 102);
-  height: 400px;
+  height: 600px;
   width: 100%;
 
   .cmn__text {
-    height: 150px;
+    height: 300px;
     width: 100%;
     flex-direction: column;
     align-items: center;
@@ -26,6 +26,7 @@
     line-height: 2em;
     padding-top: 10px;
     font-weight: 20px;
+    margin: 25px;
   }
 }
 

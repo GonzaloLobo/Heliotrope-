@@ -53,8 +53,8 @@ header ul li {
 header li a {
   text-decoration: none;
   color: #666666;
-  font-size: 10px;
-  padding: 7px 13px;
+  font-size: 18px;
+  padding: 8px 13px;
   text-transform: uppercase;
 }
 header li a.active,
@@ -551,11 +551,11 @@ footer .footerctn .foo .info li p a:hover {
 .cmn {
   font-family: "Roboto Mono", monospace;
   color: #666666;
-  height: 400px;
+  height: 600px;
   width: 100%;
 }
 .cmn .cmn__text {
-  height: 150px;
+  height: 300px;
   width: 100%;
   flex-direction: column;
   align-items: center;
@@ -574,6 +574,7 @@ footer .footerctn .foo .info li p a:hover {
   line-height: 2em;
   padding-top: 10px;
   font-weight: 20px;
+  margin: 25px;
 }
 
 .H3 {

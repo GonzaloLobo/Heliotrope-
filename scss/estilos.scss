@@ -101,7 +101,7 @@ header {
   li a {
     text-decoration: none;
     color: rgb(102, 102, 102);
-    font-size: 18px;
+    font-size: 12px;
     padding: 8px 13px;
     text-transform: uppercase;
   }
@@ -646,6 +646,7 @@ footer {
 }
 
 @media (min-width: 768px) {
+  
   .dev {
     height: 600px;
   }
@@ -690,6 +691,8 @@ footer {
   .cmn__text {
     height: 150px;
   }
+  
 }
+
 
 /*# sourceMappingURL=estilos.css.map */

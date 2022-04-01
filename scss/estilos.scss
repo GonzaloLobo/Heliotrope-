@@ -9,7 +9,7 @@ $colortarjetas2: #fda5b8;
 
 $font1: "Poppins", sans-serif;
 // "Nunito", sans-serif
-$font2: "Roboto Mono", monospace;
+$font2: "Roboto Mono";
 // maps
 $headings: (
   h1: 3.5rem,
@@ -167,7 +167,7 @@ header {
     color: rgb(102, 102, 102);
     font-size: 1.2rem;
     padding: 2rem;
-    font-family: $font2;
+    font-family: $font1;
   }
 
   .container-btn__btn {
@@ -211,7 +211,7 @@ header {
 /* sec */
 
 .sec {
-  font-family: $font2;
+  font-family: $font1;
   height: 225px;
   width: 100%;
   padding: 1.5rem;
@@ -265,7 +265,7 @@ header {
   }
 
   p {
-    font-family: $font2;
+    font-family: $font1;
     font-size: 1.1rem;
     text-align: justify;
   }
@@ -604,7 +604,7 @@ footer {
   }
 
   li a {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 
   ul li a:hover,
@@ -646,7 +646,6 @@ footer {
 }
 
 @media (min-width: 768px) {
-  
   .dev {
     height: 600px;
   }
@@ -691,8 +690,6 @@ footer {
   .cmn__text {
     height: 150px;
   }
-  
 }
-
 
 /*# sourceMappingURL=estilos.css.map */

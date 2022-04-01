@@ -114,7 +114,7 @@ header li a:hover {
   color: #666666;
   font-size: 1.2rem;
   padding: 2rem;
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
 }
 .container-hero .container-btn__btn {
   font-size: 1rem;
@@ -154,7 +154,7 @@ header li a:hover {
 /* -----------------------*/
 /* sec */
 .sec {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
   height: 225px;
   width: 100%;
   padding: 1.5rem;
@@ -204,7 +204,7 @@ header li a:hover {
   padding-bottom: 2rem;
 }
 .nosotros p {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Poppins", sans-serif;
   font-size: 1.1rem;
   text-align: justify;
 }
@@ -549,7 +549,7 @@ footer .footerctn .foo .info li p a:hover {
 /* comunidad.html--------------- */
 /* ---------Comunidad-------------------- */
 .cmn {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono";
   color: #666666;
   height: 600px;
   width: 100%;
@@ -578,7 +578,7 @@ footer .footerctn .foo .info li p a:hover {
 }
 
 .H3 {
-  font-family: "Roboto Mono", monospace;
+  font-family: "Roboto Mono";
   margin: 20px;
 }
 .H3 .c-title-secondary {
@@ -592,7 +592,7 @@ div p {
   color: #666666;
   font-size: 1rem;
   padding-top: 5px;
-  font-size: "Roboto Mono", monospace;
+  font-size: "Roboto Mono";
 }
 
 /* comunidad.html--------------- */
@@ -684,7 +684,7 @@ div p {
   }
 
   li a {
-    font-size: 20px;
+    font-size: 18px !important;
   }
 
   ul li a:hover,

@@ -30,6 +30,7 @@ $headings: (
   cursor: pointer;
   border-radius: 1.5rem;
   color: white;
+  
 }
 
 @mixin tarjeta {
@@ -277,11 +278,12 @@ header {
 /* TARJETAS */
 /* ----------- */
 .tarjetas {
-  font-family: $font1;
+  font-family: "Poppins", sans-serif;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
-  grid-gap: 40px;
+  grid-gap: 111px;
+  margin-inline: 120px;
 
   .tarjA {
     @include tarjeta;
@@ -653,6 +655,7 @@ footer {
   .nosotros {
     display: flex;
     height: 500px;
+    margin-inline: 50px;
   }
   .nosotros__img {
     background-size: cover;
@@ -667,6 +670,7 @@ footer {
   .nosotros__text p {
     font-size: 1rem;
     line-height: 30px;
+    margin-inline: 90px;
   }
 
   .wide {

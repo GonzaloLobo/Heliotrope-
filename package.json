@@ -97,8 +97,7 @@
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "scss": "node-sass -watch scss -o css",
-    "sass": "sass scss/estilos.scss css/estilos.css"
+    "scss": "node-sass -watch scss -o css"
   },
   "repository": {
     "type": "git",

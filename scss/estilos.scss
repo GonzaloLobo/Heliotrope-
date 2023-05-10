@@ -549,13 +549,6 @@ footer {
   }
 }
 
-@media (max-width: 991px) {
-
-
-  footer .footerctn {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
 
 
 
@@ -593,6 +586,229 @@ footer {
 
 /* media queries--------------- */
 /* ----------------------------- */
+
+@media screen and (max-width:320px) {
+  footer .footerctn {
+    grid-template-columns: repeat(2, 130px)!important;
+}
+}
+
+
+
+@media screen and (min-width: 300px) and (max-width:424px) {
+  header .checkbtn {
+    display: block;
+  }
+
+  header nav {
+    height: 80px;
+    width: auto;
+    margin: 0 auto;
+
+  }
+  header #check:checked ~ ul {
+    left: 0;
+  }
+
+  .container-hero #containerP{
+    margin-inline: 0px !important;
+  }
+
+  header nav ul {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background-image: url(../img/blob-scene-haikei.svg);
+    background-size: cover;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  header nav ul li {
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+  }
+
+  li a {
+    font-size: 18px !important;
+  }
+
+  ul li a:hover,
+  ul li a.active {
+    background-color: none;
+    color: white;
+  }
+  // fin Header
+  //
+
+
+  .bannerImg{
+    width: auto;
+    height: 250px;
+  }
+
+  // hero
+  .container-hero .c-title-primary{
+    font-size: 35px;
+  }
+
+
+  // fin hero
+  //
+
+  // H2
+
+  .H2 {
+    margin-left: 20px;
+  }
+
+  .c-title-secondary {
+    font-size: 18px!important;
+    font-weight: 500;
+  }
+
+
+  // fin H2//
+
+  //
+  .sec p {
+    font-size: 14px;
+    margin-inline: 2rem;
+    line-height: 23px;
+  }
+
+
+  .nosotros {
+    margin-top: 40px;
+    margin-inline: 33px!important;
+    height: 530px;
+    flex-direction: column;
+  }
+
+  .nosotros__text{
+    justify-content: center;
+  }
+
+  .c-title-tertiary{
+    font-size: 18px!important;
+    font-weight: 500!important;
+  }
+
+
+  .nosotros p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+
+  .tarjetas {
+    display: flex;
+    flex-direction: column;
+    margin-inline: 0;
+    align-items: center;
+    gap: 50px;
+  }
+
+  .tarjetas .tarjA, .tarjetas .tarjB{
+    height: 380px;
+    width: 273px;
+  }
+
+  .details{
+    padding: 10px 15px;
+  }
+
+  .c-title-quaternary{
+    font-weight: 500!important;
+    font-size: 14px!important;
+  }
+
+
+
+  .dev {
+    height: 550px;
+    width: auto;
+  }
+
+  .dev h4 {
+    font-size: 23px;
+    
+  }
+
+
+  .dev p {
+    padding-inline: 0px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+
+  footer {
+    width: auto;
+    padding: 40px 25px;
+  }
+
+  .foo .c-title-latest{
+    font-size: 15px;
+    font-weight: 500!important;
+  }
+  
+  .foo p {
+    font-size: 13px !important;
+    padding-right: 13px!important;
+  }
+
+  footer .footerctn {
+    grid-template-columns: repeat(2, 149px);
+    grid-gap: 30px;
+  }
+  
+
+  .list-maps .maps a {
+    font-size: 14px!important;
+  }
+
+  .rrss {
+    grid-gap: 0px!important;
+    grid-template-columns: repeat(4, 45px)!important;
+  }
+
+  .rrss li a {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+
+  }
+
+
+
+  footer .footerctn .foo .rrss li a .fa{
+    font-size: 18px;
+  }
+
+  footer .footerctn .foo .info li p a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 13px!important;
+  }
+
+  footer .footerctn .foo .info li{
+    grid-template-columns: 23px auto;
+  }
+
+ footer .footerctn .foo .info li span:nth-child(1){
+  font-size: 15px!important;
+  padding-top: 4px!important;
+  padding-left: 4px!important;
+ }
+}
+
+
+
+
 
 @media screen and (min-width: 424px) and (max-width:767px) {
   // header
@@ -808,7 +1024,6 @@ footer {
 
 
 }
-
 
 
 

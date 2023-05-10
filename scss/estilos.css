@@ -17,15 +17,14 @@ header {
 }
 header nav {
   height: 80px;
-  width: 1120px;
-  margin: 0 auto;
+  width: 100%;
 }
 header nav #check {
   display: none;
 }
 header .checkbtn {
   font-size: 20px;
-  color: #ffba4d;
+  color: rgb(255, 186, 77);
   float: right;
   line-height: 80px;
   margin-right: 20px;
@@ -53,14 +52,14 @@ header ul li {
 }
 header li a {
   text-decoration: none;
-  color: #666666;
+  color: rgb(102, 102, 102);
   font-size: 12px;
   padding: 8px 13px;
   text-transform: uppercase;
 }
 header li a.active,
 header li a:hover {
-  background-color: #ffba4d;
+  background-color: rgb(255, 186, 77);
   transition: 1s;
   border-radius: 1.5rem;
   text-decoration: none;
@@ -83,10 +82,7 @@ header li a:hover {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  width: 1120px;
-  position: relative;
-  margin: 0 auto;
-  border-radius: 0% 0% 50px 50px;
+  width: 100%;
 }
 
 /* fin de banner */
@@ -94,10 +90,9 @@ header li a:hover {
 /* hero */
 .container-hero {
   text-align: center;
+  background-color: white;
   height: auto;
   width: 100%;
-  position: absolute;
-  top: 11%;
   /* display: flex; */
   justify-content: center;
   align-items: center;
@@ -107,8 +102,8 @@ header li a:hover {
 .container-hero .c-title-primary {
   font-size: 3.5rem;
   font-weight: bold;
-  color: #666666;
-  text-shadow: 4px 3px 6px #ffba4d;
+  color: rgb(102, 102, 102);
+  text-shadow: 4px 3px 6px rgb(255, 186, 77);
   text-align: center;
   font-family: "Poppins", sans-serif;
   font-weight: 50px;
@@ -119,7 +114,7 @@ header li a:hover {
 }
 .container-hero p {
   text-align: center;
-  color: #666666;
+  color: rgb(102, 102, 102);
   font-size: 1.2rem;
   padding: 2rem;
   font-family: "Poppins", sans-serif;
@@ -132,7 +127,7 @@ header li a:hover {
   cursor: pointer;
   border-radius: 1.5rem;
   color: white;
-  background-color: #ffba4d;
+  background-color: rgb(255, 186, 77);
 }
 
 /* fin hero */
@@ -140,9 +135,10 @@ header li a:hover {
 /* H2 */
 .H2 {
   font-family: "Poppins", sans-serif;
+  font-size: 1.5rem;
   display: flex;
   align-items: baseline;
-  margin-left: 400px;
+  margin-left: 30px;
 }
 .H2 img {
   background-position: center;
@@ -152,10 +148,9 @@ header li a:hover {
   opacity: 0.3;
 }
 .H2 .c-title-secondary {
-  color: #666666;
+  color: rgb(102, 102, 102);
   text-align: center;
   padding-top: 25px;
-  font-size: 23px;
 }
 
 /* fin H2 */
@@ -163,17 +158,18 @@ header li a:hover {
 /* sec */
 .sec {
   font-family: "Poppins", sans-serif;
-  height: 160px;
+  height: 225px;
   width: 100%;
+  padding: 1.5rem;
 }
 .sec p {
-  color: #666666;
-  font-size: 15px;
+  color: rgb(102, 102, 102);
+  font-size: 1.2rem;
   text-align: left;
-  line-height: 26px;
-  margin-inline: 30rem;
+  line-height: 2em;
+  margin: 1rem;
   padding: 1rem;
-  border-left: 2px solid #666666;
+  border-left: 2px solid rgb(102, 102, 102);
 }
 
 /* fin container-2 */
@@ -181,11 +177,10 @@ header li a:hover {
 /*section nosotros ------------*/
 /* ----------------------------- */
 .nosotros {
-  color: #666666;
-  height: 430px;
-  margin-inline: 420px;
-  margin-top: 40px;
-  display: flex;
+  color: rgb(102, 102, 102);
+  height: 650px;
+  width: 100%;
+  padding-top: 40px;
 }
 .nosotros .nosotros__img {
   background-image: url(https://images.unsplash.com/photo-1643101808019-34feab61ea6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
@@ -199,21 +194,21 @@ header li a:hover {
   height: 325px;
   width: 100%;
   background-color: white;
-  display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
+  padding: 20px;
+  margin-top: 20px;
 }
 .nosotros .c-title-tertiary {
   font-family: "Poppins", sans-serif;
-  font-size: 22px;
+  font-size: 2rem;
   font-weight: bold;
   padding-bottom: 2rem;
 }
 .nosotros p {
   font-family: "Poppins", sans-serif;
-  font-size: 15px;
-  line-height: 26px;
+  font-size: 1.1rem;
   text-align: justify;
 }
 
@@ -226,26 +221,26 @@ header li a:hover {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
-  margin-inline: 398px;
+  grid-gap: 111px;
+  margin-inline: 120px;
 }
 .tarjetas .tarjA, .tarjetas .tarjB {
   background-color: #f3d9b0;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
-  width: 235px;
-  height: 390px;
 }
 .tarjetas .tarjB {
   background-color: #fda5b8;
 }
 .tarjetas .container {
   position: relative;
-  clip-path: circle(0 0, 100% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: circle(0 0, 100% 0, 100% 85%, 0 100%);
+          clip-path: circle(0 0, 100% 0, 100% 85%, 0 100%);
   /* o ellipse */
 }
 .tarjetas .tarjeta:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 5px 5px #9e9d9d;
+  box-shadow: 0 0 5px 5px rgb(158, 157, 157);
 }
 .tarjetas .container img {
   width: 100%;
@@ -264,25 +259,25 @@ header li a:hover {
 }
 .tarjetas .details {
   padding: 20px 10px;
-  color: #666666;
-  padding: 10px 30px;
+  color: rgb(102, 102, 102);
 }
 .tarjetas .details .c-title-quaternary {
   font-weight: 600;
-  font-size: 15px;
-  margin: 7px 0 7px 0;
+  font-size: 18px;
+  margin: 10px 0 15px 0;
 }
 .tarjetas .details p {
   font-family: "Poppins", sans-serif;
+  font-size: 15px;
+  line-height: 30px;
   font-weight: 400;
-  font-size: 12px;
-  overflow: hidden;
 }
 
 /* fin  tarjeta */
 /* ---------------------------- */
 /* dev */
 .dev {
+  width: 100%;
   background-image: url(../img/blob-scene-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -292,11 +287,8 @@ header li a:hover {
   font-family: "Poppins", sans-serif;
   display: flex;
   height: 400px;
-  width: 1120px;
-  margin: 0 auto;
+  width: 100%;
   overflow: hidden;
-  margin-top: 50px;
-  border-radius: 50px 50px 50px 50px;
 }
 .dev .dev__ctn {
   width: 100%;
@@ -306,7 +298,7 @@ header li a:hover {
   justify-content: center;
   align-items: center;
   margin: 2rem;
-  color: #666666;
+  color: rgb(102, 102, 102);
 }
 .dev h4 {
   text-align: center;
@@ -317,7 +309,6 @@ header li a:hover {
 .dev p {
   text-align: center;
   justify-content: center;
-  padding-inline: 180px;
   overflow: hidden;
   font-size: 1rem;
 }
@@ -329,7 +320,7 @@ header li a:hover {
   cursor: pointer;
   border-radius: 1.5rem;
   color: white;
-  background-color: #ffba4d;
+  background-color: rgb(255, 186, 77);
   flex-wrap: wrap;
 }
 
@@ -337,21 +328,21 @@ header li a:hover {
 /* ---------------------------- */
 footer {
   position: relative;
-  width: 1120px;
-  margin: 0 auto;
+  width: 100%;
   height: auto;
   padding: 50px 100px;
+  background-color: #f3f0f0;
   font-family: "Poppins", sans-serif;
 }
 footer .footerctn {
   width: 100%;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 2fr 2fr 1fr 1fr;
   grid-gap: 30px;
 }
 footer .footerctn .foo .c-title-latest {
   position: relative;
-  color: #666666;
+  color: rgb(102, 102, 102);
   font-weight: 400;
   margin-bottom: 30px;
 }
@@ -362,10 +353,10 @@ footer .footerctn .foo .c-title-latest:before {
   left: 0;
   width: 50px;
   height: 2px;
-  background-color: #ffba4d;
+  background-color: rgb(255, 186, 77);
 }
 footer .footerctn .foo p {
-  color: #666666;
+  color: rgb(102, 102, 102);
 }
 footer .footerctn .foo .rrss {
   margin-top: 20px;
@@ -385,14 +376,14 @@ footer .footerctn .foo .rrss li a {
   color: white;
   margin-right: 10px;
   margin-bottom: 20px;
-  background-color: #ffba4d;
+  background-color: rgb(255, 186, 77);
   border-radius: 1.5rem;
   text-align: center;
   transition: all 300ms ease;
   align-items: center;
 }
 footer .footerctn .foo .rrss li a:hover {
-  background-color: #ffba4d;
+  background-color: rgb(255, 186, 77);
   opacity: 0.6;
   border-radius: 1.5rem;
 }
@@ -408,13 +399,13 @@ footer .footerctn .foo .list-maps .maps {
 }
 footer .footerctn .foo .list-maps .maps a {
   list-style: none;
-  color: #666666;
+  color: rgb(102, 102, 102);
   text-decoration: none;
   margin-bottom: 10px;
   display: inline-block;
 }
 footer .footerctn .foo .list-maps .maps a:hover {
-  color: #ffba4d;
+  color: rgb(255, 186, 77);
   transition: 0.1s;
   opacity: 0.8;
 }
@@ -427,26 +418,27 @@ footer .footerctn .foo .info li {
   margin-bottom: 16px;
 }
 footer .footerctn .foo .info li span {
-  color: #ffba4d !important;
+  color: rgb(255, 186, 77) !important;
 }
 footer .footerctn .foo .info li span:nth-child(1) {
-  color: #666666;
+  color: rgb(102, 102, 102);
   font-size: 20px;
 }
 footer .footerctn .foo .info li p a {
-  color: #666666;
+  color: rgb(102, 102, 102);
   text-decoration: none;
 }
 footer .footerctn .foo .info li p a:hover {
-  color: #ffba4d;
+  color: rgb(255, 186, 77);
   transition: 0.1s;
 }
 
 .grupo-2 {
   width: 100%;
+  background-color: #f3f0f0;
   padding: 8px 100px;
   text-align: center;
-  color: #666666;
+  color: rgb(102, 102, 102);
   font-family: "Poppins", sans-serif;
 }
 .grupo-2 small {
@@ -454,8 +446,25 @@ footer .footerctn .foo .info li p a:hover {
 }
 
 @media (max-width: 991px) {
+  footer {
+    padding: 40px;
+  }
   footer .footerctn {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (max-width: 768px) {
+  footer .footerctn {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tittle-primary {
+    text-align: center;
+  }
+}
+@media (min-width: 360px) {
+  .nosotros {
+    height: 740px !important;
+    padding-top: 100px;
   }
 }
 /* fin footer */
@@ -469,7 +478,7 @@ footer .footerctn .foo .info li p a:hover {
 .cardctn .card {
   display: inline-block;
   margin: 15px;
-  background-color: #ffba4d !important;
+  background-color: rgb(255, 186, 77) !important;
 }
 .cardctn .H3 {
   padding: 15px;
@@ -519,12 +528,13 @@ footer .footerctn .foo .info li p a:hover {
 
 .card-ctn {
   position: relative;
-  clip-path: ellipse(0 0, 85% 0, 100% 85%, 0 100%);
+  -webkit-clip-path: ellipse(0 0, 85% 0, 100% 85%, 0 100%);
+          clip-path: ellipse(0 0, 85% 0, 100% 85%, 0 100%);
 }
 
 .srtc:hover {
   transform: scale(1.04);
-  box-shadow: 0 0 5px 5px #9e9d9d;
+  box-shadow: 0 0 5px 5px rgb(158, 157, 157);
 }
 
 .containerimg {
@@ -550,7 +560,7 @@ footer .footerctn .foo .info li p a:hover {
 /* ---------Comunidad-------------------- */
 .cmn {
   font-family: "Roboto Mono";
-  color: #666666;
+  color: rgb(102, 102, 102);
   height: 600px;
   width: 100%;
 }
@@ -583,13 +593,13 @@ footer .footerctn .foo .info li p a:hover {
 }
 .H3 .c-title-secondary {
   font-size: 1.5rem;
-  color: #ffba4d;
+  color: rgb(255, 186, 77);
   text-decoration: underline;
   padding-bottom: 5px;
 }
 
 div p {
-  color: #666666;
+  color: rgb(162, 17, 17);
   font-size: 1rem;
   padding-top: 5px;
   font-size: "Roboto Mono";
@@ -608,9 +618,9 @@ div p {
   background-color: white;
   margin: 50px 50px;
   padding: 20px;
-  border: 20px solid #ffba4d;
-  outline: 4px solid #ffba4d;
-  color: #666666;
+  border: 20px solid rgb(255, 186, 77);
+  outline: 4px solid rgb(255, 186, 77);
+  color: rgb(102, 102, 102);
 }
 .flex-container .form {
   min-width: 400px;
@@ -623,9 +633,9 @@ div p {
   padding: 7px;
   margin: 6px 0;
   border: none;
-  border-bottom: 3px solid #ffba4d;
+  border-bottom: 3px solid rgb(255, 186, 77);
   background: transparent;
-  color: #666666;
+  color: rgb(102, 102, 102);
 }
 .flex-container .form__input:focus {
   background: linear-gradient(to bottom, transparent, #f3d9b0);
@@ -639,7 +649,7 @@ div p {
   flex: 1;
   padding: 10px;
   display: flex;
-  color: #ffba4d;
+  color: rgb(255, 186, 77);
 }
 .flex-container .img-container {
   padding: 20px;
@@ -656,25 +666,13 @@ div p {
 /* -------fin desarrollo-------------------- */
 /* media queries--------------- */
 /* ----------------------------- */
-@media screen and (min-width: 424px) and (max-width: 767px) {
+@media (max-width: 576px) {
   header .checkbtn {
     display: block;
   }
-
-  header nav {
-    height: 80px;
-    width: auto;
-    margin: 0 auto;
-  }
-
   header #check:checked ~ ul {
     left: 0;
   }
-
-  .container-hero #containerP {
-    margin-inline: 0px !important;
-  }
-
   header nav ul {
     position: fixed;
     width: 100%;
@@ -686,202 +684,74 @@ div p {
     text-align: center;
     transition: all 0.5s;
   }
-
   header nav ul li {
     display: block;
     margin: 50px 0;
     line-height: 30px;
   }
-
   li a {
     font-size: 18px !important;
   }
-
   ul li a:hover,
-ul li a.active {
+  ul li a.active {
     background-color: none;
     color: white;
   }
-
-  .bannerImg {
-    width: auto;
-    height: 250px;
+  .container-hero span {
+    font-size: 3rem;
   }
-
-  .container-hero .c-title-primary {
-    font-size: 35px;
+  .H2 h2 {
+    font-size: 25px;
   }
-
-  .H2 {
-    margin-left: 20px;
-  }
-
-  .c-title-secondary {
-    font-size: 18px !important;
-    font-weight: 500;
-  }
-
   .sec p {
-    font-size: 14px;
-    margin-inline: 2rem;
-    line-height: 23px;
+    font-size: 15px;
   }
-
-  .nosotros {
-    margin-top: 40px;
-    margin-inline: 33px !important;
-    height: 530px;
-    flex-direction: column;
-  }
-
-  .nosotros__text {
-    justify-content: center;
-  }
-
-  .c-title-tertiary {
-    font-size: 18px !important;
-    font-weight: 500 !important;
-  }
-
-  .nosotros p {
-    font-size: 14px;
-    line-height: 23px;
-  }
-
   .tarjetas {
     display: flex;
     flex-direction: column;
-    margin-inline: 0;
-    align-items: center;
-    gap: 50px;
   }
-
-  .tarjetas .tarjA, .tarjetas .tarjB {
-    height: 380px;
-    width: 273px;
-  }
-
-  .details {
-    padding: 10px 15px;
-  }
-
-  .c-title-quaternary {
-    font-weight: 500 !important;
-    font-size: 14px !important;
-  }
-
   .dev {
     height: 550px;
-    width: auto;
-  }
-
-  .dev h4 {
-    font-size: 23px;
-  }
-
-  .dev p {
-    padding-inline: 0px;
-    font-size: 14px;
-    line-height: 23px;
-  }
-
-  footer {
-    width: auto;
-    padding: 40px 25px;
-  }
-
-  .foo .c-title-latest {
-    font-size: 15px;
-    font-weight: 500 !important;
-  }
-
-  .foo p {
-    font-size: 13px !important;
-    padding-right: 13px !important;
-  }
-
-  footer .footerctn {
-    grid-template-columns: repeat(2, 149px);
-    grid-gap: 70px;
-  }
-
-  .list-maps .maps a {
-    font-size: 14px !important;
-  }
-
-  .rrss {
-    grid-gap: 0px !important;
-    grid-template-columns: repeat(4, 45px) !important;
-  }
-
-  .rrss li a {
-    width: 30px !important;
-    height: 30px !important;
-    line-height: 30px !important;
-  }
-
-  footer .footerctn .foo .rrss li a .fa {
-    font-size: 18px;
-  }
-
-  footer .footerctn .foo .info li p a {
-    color: #666666;
-    text-decoration: none;
-    font-size: 13px !important;
-  }
-
-  footer .footerctn .foo .info li {
-    grid-template-columns: 23px auto;
-  }
-
-  footer .footerctn .foo .info li span:nth-child(1) {
-    font-size: 15px !important;
-    padding-top: 4px !important;
-    padding-left: 4px !important;
   }
 }
 @media (min-width: 768px) {
   .dev {
     height: 600px;
   }
-
+  .nosotros {
+    display: flex;
+    height: 500px;
+    margin-inline: 50px;
+  }
   .nosotros__img {
     background-size: cover;
     width: 50%;
     height: 100%;
   }
-
   .nosotros__text {
     width: 50%;
     height: 100%;
   }
-
   .nosotros__text p {
+    font-size: 1rem;
     line-height: 30px;
     margin-inline: 90px;
   }
-
   .wide {
     grid-column: span 2;
   }
-
   .tall {
     grid-row: span 2;
   }
-
   .grid-container {
     display: flex;
   }
-
   .cmn {
     display: flex;
     height: 300px;
   }
-
   .cmn__text {
     height: 150px;
   }
 }
-/*# sourceMappingURL=estilos.css.map */
-
 /*# sourceMappingURL=estilos.css.map */

@@ -37,6 +37,9 @@ $headings: (
   background-color: #f3d9b0;
   border-radius: 20px;
   box-shadow: 0 0 30px rgba(0, 0, 0, 0.18);
+  width: 235px;
+  height: 390px;
+
 }
 // extend en .tarjetas
 
@@ -48,6 +51,11 @@ $headings: (
   padding: 0;
   box-sizing: border-box;
 }
+// .widthScreen {
+//   margin: 0px auto;
+//   min-height: 100vh;
+//   max-width: 1504px;
+// }
 
 header {
   background-color: #f3f0f0;
@@ -57,10 +65,13 @@ header {
   left: 0;
   box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
+  
+
 
   nav {
     height: 80px;
-    width: 100%;
+    width: 1120px;
+    margin: 0 auto;
 
     #check {
       display: none;
@@ -134,8 +145,12 @@ header {
   background-repeat: no-repeat;
   background-size: cover;
   height: 400px;
-  width: 100%;
+  width: 1120px;
+  position: relative;
+  margin: 0 auto;
+  border-radius: 0% 0% 50px 50px;
 }
+
 
 /* fin de banner */
 /* ---------------------------- */
@@ -143,14 +158,17 @@ header {
 /* hero */
 .container-hero {
   text-align: center;
-  background-color: white;
   height: auto;
   width: 100%;
+  position: absolute;
+  top: 11%;
   /* display: flex; */
   justify-content: center;
   align-items: center;
   padding: 2rem;
   margin-bottom: 4rem;
+
+  
 
   .c-title-primary {
     font-size: map-get($headings, h1);
@@ -162,6 +180,11 @@ header {
     font-weight: 50px;
     /* word-wrap: break-word; */
   }
+  #containerP{
+    margin-inline: 400px!important;
+  }
+
+  
 
   p {
     text-align: center;
@@ -182,14 +205,11 @@ header {
 /* H2 */
 
 .H2 {
-  font-family: $font1;
-  font-size: map-get($headings, h2);
-  // background-image: url(img/blob-scene-haikei.svg);
-  // background-size: cover;
-
+  font-family: "Poppins", sans-serif;
   display: flex;
   align-items: baseline;
-  margin-left: 30px;
+  margin-left: 400px;
+
 
   img {
     background-position: center;
@@ -201,9 +221,9 @@ header {
 
   .c-title-secondary {
     color: rgb(102, 102, 102);
-
     text-align: center;
     padding-top: 25px;
+    font-size: 23px;
   }
 }
 /* fin H2 */
@@ -213,16 +233,16 @@ header {
 
 .sec {
   font-family: $font1;
-  height: 225px;
+  height: 160px;
   width: 100%;
-  padding: 1.5rem;
+ 
 
   p {
     color: rgb(102, 102, 102);
-    font-size: 1.2rem;
+    font-size: 15px;
     text-align: left;
-    line-height: 2em;
-    margin: 1rem;
+    line-height: 26px;
+    margin-inline: 30rem;
     padding: 1rem;
     border-left: 2px solid rgb(102, 102, 102);
   }
@@ -234,9 +254,10 @@ header {
 /* ----------------------------- */
 .nosotros {
   color: rgb(102, 102, 102);
-  height: 650px;
-  width: 100%;
-  padding-top: 40px;
+  height: 430px;
+  margin-inline: 420px;
+  margin-top: 40px;
+  display: flex;
 
   .nosotros__img {
     background-image: url(https://images.unsplash.com/photo-1643101808019-34feab61ea6a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80);
@@ -251,23 +272,25 @@ header {
     height: 325px;
     width: 100%;
     background-color: white;
+    display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    padding: 20px;
-    margin-top: 20px;
+    // padding: 20px;
+    // margin-top: 20px;
   }
 
   .c-title-tertiary {
     font-family: $font1;
-    font-size: map-get($headings, h3);
+    font-size: 22px;
     font-weight: bold;
     padding-bottom: 2rem;
   }
 
   p {
     font-family: $font1;
-    font-size: 1.1rem;
+    font-size: 15px;
+    line-height: 26px;
     text-align: justify;
   }
 }
@@ -282,8 +305,7 @@ header {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   padding: 20px;
-  grid-gap: 111px;
-  margin-inline: 120px;
+  margin-inline: 398px;
 
   .tarjA {
     @include tarjeta;
@@ -324,17 +346,19 @@ header {
   .details {
     padding: 20px 10px;
     color: rgb(102, 102, 102);
+    padding: 10px 30px;
 
     .c-title-quaternary {
       font-weight: 600;
-      font-size: 18px;
-      margin: 10px 0 15px 0;
+      font-size: 15px;
+      margin: 7px 0 7px 0;
     }
     p {
       font-family: $font1;
-      font-size: 15px;
-      line-height: 30px;
+      
       font-weight: 400;
+      font-size: 12px;
+      overflow: hidden;
     }
   }
 }
@@ -343,7 +367,6 @@ header {
 
 /* dev */
 .dev {
-  width: 100%;
   background-image: url(../img/blob-scene-haikei.svg);
   background-size: cover;
   background-repeat: no-repeat;
@@ -353,9 +376,11 @@ header {
   font-family: $font1;
   display: flex;
   height: 400px;
-  width: 100%;
-
+  width: 1120px;
+  margin: 0 auto;
   overflow: hidden;
+  margin-top: 50px;
+  border-radius: 50px 50px 50px 50px;
 
   .dev__ctn {
     width: 100%;
@@ -378,7 +403,7 @@ header {
   p {
     text-align: center;
     justify-content: center;
-
+    padding-inline: 180px;
     overflow: hidden;
     font-size: 1rem;
   }
@@ -395,16 +420,17 @@ header {
 
 footer {
   position: relative;
-  width: 100%;
+  width: 1120px;
+  margin: 0 auto;
   height: auto;
   padding: 50px 100px;
-  background-color: #f3f0f0;
+  // background-color: #f3f0f0;
   font-family: $font1;
 
   .footerctn {
     width: 100%;
     display: grid;
-    grid-template-columns: 2fr 2fr 1fr 1fr;
+    grid-template-columns: 2fr 1fr;
     grid-gap: 30px;
 
     .foo {
@@ -512,7 +538,7 @@ footer {
 
 .grupo-2 {
   width: 100%;
-  background-color: #f3f0f0;
+  // background-color: #f3f0f0;
   padding: 8px 100px;
   text-align: center;
   color: rgb(102, 102, 102);
@@ -524,23 +550,14 @@ footer {
 }
 
 @media (max-width: 991px) {
-  footer {
-    padding: 40px;
-  }
+
 
   footer .footerctn {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 768px) {
-  footer .footerctn {
-    grid-template-columns: repeat(1, 1fr);
-  }
-  .tittle-primary {
-    text-align: center;
-  }
-}
+
 
 /* fin footer */
 /* ------------ */
@@ -577,14 +594,24 @@ footer {
 /* media queries--------------- */
 /* ----------------------------- */
 
-@media (max-width: 576px) {
+@media screen and (min-width: 424px) and (max-width:767px) {
   // header
   header .checkbtn {
     display: block;
   }
 
+  header nav {
+    height: 80px;
+    width: auto;
+    margin: 0 auto;
+
+  }
   header #check:checked ~ ul {
     left: 0;
+  }
+
+  .container-hero #containerP{
+    margin-inline: 0px !important;
   }
 
   header nav ul {
@@ -617,46 +644,179 @@ footer {
   // fin Header
   //
 
-  // hero
 
-  .container-hero span {
-    font-size: 3rem;
+  .bannerImg{
+    width: auto;
+    height: 250px;
   }
+
+  // hero
+  .container-hero .c-title-primary{
+    font-size: 35px;
+  }
+
+
   // fin hero
   //
 
   // H2
 
-  .H2 h2 {
-    font-size: 25px;
+  .H2 {
+    margin-left: 20px;
   }
-  // fin H2
-  //
+
+  .c-title-secondary {
+    font-size: 18px!important;
+    font-weight: 500;
+  }
+
+
+  // fin H2//
 
   //
   .sec p {
-    font-size: 15px;
+    font-size: 14px;
+    margin-inline: 2rem;
+    line-height: 23px;
   }
+
+
+  .nosotros {
+    margin-top: 40px;
+    margin-inline: 33px!important;
+    height: 530px;
+    flex-direction: column;
+  }
+
+  .nosotros__text{
+    justify-content: center;
+  }
+
+  .c-title-tertiary{
+    font-size: 18px!important;
+    font-weight: 500!important;
+  }
+
+
+  .nosotros p {
+    font-size: 14px;
+    line-height: 23px;
+  }
+
 
   .tarjetas {
     display: flex;
     flex-direction: column;
+    margin-inline: 0;
+    align-items: center;
+    gap: 50px;
   }
+
+  .tarjetas .tarjA, .tarjetas .tarjB{
+    height: 380px;
+    width: 273px;
+  }
+
+  .details{
+    padding: 10px 15px;
+  }
+
+  .c-title-quaternary{
+    font-weight: 500!important;
+    font-size: 14px!important;
+  }
+
+
+
   .dev {
     height: 550px;
+    width: auto;
   }
+
+  .dev h4 {
+    font-size: 23px;
+    
+  }
+
+
+  .dev p {
+    padding-inline: 0px;
+    font-size: 14px;
+    line-height: 23px;
+  }
+
+
+  footer {
+    width: auto;
+    padding: 40px 25px;
+  }
+
+  .foo .c-title-latest{
+    font-size: 15px;
+    font-weight: 500!important;
+  }
+  
+  .foo p {
+    font-size: 13px !important;
+    padding-right: 13px!important;
+  }
+
+  footer .footerctn {
+    grid-template-columns: repeat(2, 149px);
+    grid-gap: 70px;
+  }
+  
+
+  .list-maps .maps a {
+    font-size: 14px!important;
+  }
+
+  .rrss {
+    grid-gap: 0px!important;
+    grid-template-columns: repeat(4, 45px)!important;
+  }
+
+  .rrss li a {
+    width: 30px !important;
+    height: 30px !important;
+    line-height: 30px !important;
+
+  }
+
+
+
+  footer .footerctn .foo .rrss li a .fa{
+    font-size: 18px;
+  }
+
+  footer .footerctn .foo .info li p a {
+    color: #666666;
+    text-decoration: none;
+    font-size: 13px!important;
+  }
+
+  footer .footerctn .foo .info li{
+    grid-template-columns: 23px auto;
+  }
+
+ footer .footerctn .foo .info li span:nth-child(1){
+  font-size: 15px!important;
+  padding-top: 4px!important;
+  padding-left: 4px!important;
+ }
+
+
+
 }
+
+
+
 
 @media (min-width: 768px) {
   .dev {
     height: 600px;
   }
 
-  .nosotros {
-    display: flex;
-    height: 500px;
-    margin-inline: 50px;
-  }
   .nosotros__img {
     background-size: cover;
     width: 50%;
@@ -668,7 +828,7 @@ footer {
   }
 
   .nosotros__text p {
-    font-size: 1rem;
+
     line-height: 30px;
     margin-inline: 90px;
   }
